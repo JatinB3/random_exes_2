@@ -9,7 +9,7 @@ It prompts the user for a password and only runs the main application if the cor
 import getpass
 import multiprocessing
 import sys
-import main
+import data_processor
 
 def authenticate_user():
     correct_password = "123"  # Replace with your desired password
@@ -30,7 +30,7 @@ if __name__ == "__main__":
     multiprocessing.freeze_support()  # For Windows support when using multiprocessing
     try:
         if authenticate_user():
-            main.run_main()
+            data_processor.run_main()
         else:
             print("wrong password...")
             sys.exit(1)
