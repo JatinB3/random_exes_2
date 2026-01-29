@@ -31,8 +31,7 @@ def generate_random_alphanumeric_periodically(stop_event):
         print("Generated random alphanumeric string:", alphanum)
         time.sleep(2)  # Wait for 2 seconds before generating again
 
-# if __name__ == "__main__":
-#     multiprocessing.freeze_support()  # For Windows support when using multiprocessing
+
 def  run_main():
     stop_event = multiprocessing.Event()
 
@@ -54,5 +53,7 @@ def  run_main():
         letter_process.join()
         alphanum_process.join()
         print("All processes have been terminated.")
-        
 
+if __name__ == "__main__":
+    multiprocessing.freeze_support()  # For Windows support when using multiprocessing
+    run_main()
