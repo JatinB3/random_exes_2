@@ -51,14 +51,9 @@ source .venv/bin/activate
 ```
 
 ### 3. Install Dependencies
+if you want to make exe file then install pyinstaller
 ```bash
-pip install -r requirements.txt
-```
-
-Or install manually:
-```bash
-# No external dependencies required for basic functionality
-# All imports are from Python standard library
+pip install pyinstaller
 ```
 
 ## Usage
