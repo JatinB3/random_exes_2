@@ -36,7 +36,7 @@ A Python-based application that generates random numbers, letters, and alphanume
 
 ### 1. Clone or Download the Project
 ```bash
-cd randomApp
+git clone https://github.com/JatinB3/random_exes_2.git
 ```
 
 ### 2. Create a Virtual Environment (Recommended)
