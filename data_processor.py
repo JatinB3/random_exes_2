@@ -54,8 +54,9 @@ def  run_main():
         alphanum_process.join()
         print("All processes have been terminated.")
 
-# Comment the below line if trying to convert the usr auth into an exe
+# Comment the below line if trying to convert the user_auth into an exe
 if __name__ == "__main__":
     multiprocessing.freeze_support()  # For Windows support when using multiprocessing
     run_main()
+
 
